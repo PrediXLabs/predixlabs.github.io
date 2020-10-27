@@ -4,9 +4,17 @@ a {
     color: #000000;
     }
   
-  body {
+  /* body {
       background: rgb(255,116,155);
       background: linear-gradient(315deg, rgba(255,116,155,1) 0%, rgba(255,162,159,1) 40%, rgba(255,224,160,1) 100%);
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+    } */
+
+    body {
+      background-image: linear-gradient(315deg,rgba(255,116,155,1) 0%,rgba(255,162,159,1) 40%,rgba(255,224,160,1) 100%);
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
@@ -16,7 +24,10 @@ a {
     * {
       padding: 0;
       margin: 0;
-      box-sizing: border-box;
+      -webkit-user-select: none; /* Safari */
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
     }
     
     .img {
@@ -44,6 +55,29 @@ a {
       max-width: 100%;
       max-height: 100%;
   }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .twitter {
+      content: "images/twitter.png";
+      /* float: center; */
+      width: 25px;
+      height: 25px;
+      /* vertical-align: middle;                */
+  }
+
+  .text-example {
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
   
   
   
@@ -59,6 +93,7 @@ a {
       bottom: 0;
       position: fixed;
       width: 100%;
+      margin: 0 auto
     }
   
     .footer-top {
@@ -70,21 +105,17 @@ a {
       padding-bottom: 10px;
     }
   
-  /*----------------------------------------
-  BUTTONS
-  ----------------------------------------*/
-  
-    .container {
-      margin: 0 auto;
-      margin-bottom: 10px;
-    }
-  
   
   /*----------------------------------------
   TEXT
   ----------------------------------------*/
   
-  
+    h1 {
+      font-family: "Helvetica Neue"; 
+      font-weight: 600;
+      color: black;
+      /* color: #A5A5A5; */
+    }
     h2 {
       font-family: "Helvetica Neue"; 
       font-weight: 800;
@@ -103,11 +134,5 @@ a {
       font-family: "Helvetica Neue"; 
       color: black;
     }
-    ul {
-    font-family: "Helvetica Neue"; 
-    }
-    li {
-    font-family: "Helvetica Neue"; 
-    }
-  
+    
     
